@@ -2,14 +2,14 @@ name: Package and Release Kafdrop helm chart
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   publish:
     runs-on: ubuntu-18.04
     steps:
     - uses: Azure/setup-helm@v1
-    - uses: actions/checkout@master
+    - uses: actions/checkout@develop
 
     - name: Prepare gh-pages branch
       run: |
@@ -17,7 +17,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git fetch -a
         git checkout gh-pages
-        git rebase master -s ours -f
+        git rebase develop -X ours
 
     - name: Package
       run: cd chart && helm package .
