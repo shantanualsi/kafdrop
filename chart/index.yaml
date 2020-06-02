@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  kafdrop:
+  - apiVersion: v1
+    appVersion: 3.x
+    created: "2020-06-02T08:15:57.263658665Z"
+    description: A Helm chart for Kafdrop
+    digest: a59e6f2a097b6f29b7940d20fe5b29a6b5253150cd97f2ab89e7d590958e6b24
+    name: kafdrop
+    urls:
+    - kafdrop-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-02T08:15:57.262756059Z"
