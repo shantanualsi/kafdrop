@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: Azure/setup-helm@v1
-    - uses: actions/checkout@develop
+    - uses: actions/checkout@master
 
     - name: Prepare gh-pages branch
       run: |
